@@ -1,0 +1,22 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @lesson.title %>
+</p>
+
+<p>
+  <strong>Subject:</strong>
+  <%= @lesson.subject %>
+</p>
+
+<p>
+  <strong>Grade:</strong>
+  <%= @lesson.grade %>
+</p>
+
+
+<%= link_to 'Edit', edit_lesson_path(@lesson) %> |
+<%= link_to 'Back', lessons_path %>
+
+<iframe src="<%= @lesson.lesson_file %>"width="980" height="658"></iframe>
