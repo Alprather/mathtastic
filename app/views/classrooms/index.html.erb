@@ -1,0 +1,18 @@
+
+
+<h1>Classroom Tools</h1>
+
+
+
+
+<h3> Tools that make teaching easier </h3>
+<% @classrooms.each do |classroom| %>
+  <p>
+    <td><%=  link_to classroom.title, classroom %></td>
+  </p>
+<% end %>
+
+
+</table>
+
+<br>

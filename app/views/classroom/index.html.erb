@@ -1,0 +1,29 @@
+
+
+<h1>Lessons</h1>
+
+
+
+
+<h3> Fractions </h3>
+<% @classrooms.each do |classroom| %>
+  <p>
+    <td><%=  link_to classroom.title, classroom if classroom.subject == "Fractions" %></td>
+  </p>
+<% end %>
+<h3> Integers </h3>
+<% @classrooms.each do |classroom| %>
+  <p>
+    <td><%=  link_to classroom.title, classroom if classroom.subject == "Integers" %></td>
+  </p>
+<% end %>
+<h3> Place Value </h3>
+<% @classrooms.each do |classroom| %>
+  <p>
+    <td><%=  link_to classroom.title, classroom if classroom.subject == "Place Value" %></td>
+  </p>
+<% end %>
+
+</table>
+
+<br>

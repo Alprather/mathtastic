@@ -1,0 +1,39 @@
+<%= form_for(@classroom) do |f| %>
+  <% if @classroom.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@classroom.errors.count, "error") %> prohibited this classroom from being saved:</h2>
+
+      <ul>
+      <% @classroom.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :subject %><br>
+    <%= f.text_field :subject %>
+  </div>
+  <div class="field">
+    <%= f.label :grade %><br>
+    <%= f.number_field :grade %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_field :description, :size => 100, :rows => "10" %>
+  </div>
+  <div class="field">
+    <%= f.label :lesson_file %><br>
+    <%= f.text_field :lesson_file, :size => 100, :rows => "10" %>
+  </div>
+
+  <br>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
