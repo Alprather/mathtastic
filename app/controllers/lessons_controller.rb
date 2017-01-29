@@ -53,6 +53,6 @@ class LessonsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def lesson_params
-      params.require(:lesson).permit(:title, :subject, :grade, :lesson_file, :description, :lesson_file_worksheets)
+      params.require(:lesson).permit(:title, :subject, :grade, :lesson_file, :description, :lesson_file_worksheets, :lesson_file_scorm)
     end
 end
