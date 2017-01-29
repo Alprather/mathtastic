@@ -5,18 +5,18 @@
 
 
 
-    <h3> Fractions </h3>
-    <% @lessons.each do |lesson| %>
-      <p>
-        <td><%=  link_to lesson.title, lesson if lesson.subject == "Fractions" %></td>
-      </p>
-    <% end %>
-    <h3> Integers </h3>
-    <% @lessons.each do |lesson| %>
-      <p>
-        <td><%=  link_to lesson.title, lesson if lesson.subject == "Integers" %></td>
-      </p>
-    <% end %>
+<h3> Fractions </h3>
+<% @lessons.each do |lesson| %>
+  <p>
+    <td><%=  link_to lesson.title, lesson if lesson.subject == "Fractions" %></td>
+  </p>
+<% end %>
+<h3> Integers </h3>
+<% @lessons.each do |lesson| %>
+  <p>
+    <td><%=  link_to lesson.title, lesson if lesson.subject == "Integers" %></td>
+  </p>
+<% end %>
 
 </table>
 
