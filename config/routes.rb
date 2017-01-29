@@ -1,5 +1,10 @@
 Rails.application.routes.draw do
 
+  devise_for :users
+   resources :users, only: [:show, :index] do
+     resources :lessons
+   end
+
 resources :lessons
   get "welcome/index"
 
