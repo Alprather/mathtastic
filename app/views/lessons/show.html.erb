@@ -15,8 +15,16 @@
   <%= @lesson.grade %>
 </p>
 
+<p>
+  <strong>Description:</strong>
+  <%= @lesson.description %>
+</p>
 
-<%= link_to 'Edit', edit_lesson_path(@lesson) %> |
+<br>
+
 <%= link_to 'Back', lessons_path %>
 
 <iframe src="<%= @lesson.lesson_file %>"width="980" height="658"></iframe>
+<br>
+<td><%= link_to 'Edit', edit_lesson_path(@lesson) %></td>
+<td><%= link_to 'Delete', @lesson, method: :delete, data: { confirm: 'Are you sure?' } %></td>

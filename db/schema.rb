@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170128204651) do
+ActiveRecord::Schema.define(version: 20170128214515) do
 
   create_table "lessons", force: :cascade do |t|
     t.string   "title"
@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 20170128204651) do
     t.string   "lesson_file"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
+    t.string   "description"
   end
 
 end
