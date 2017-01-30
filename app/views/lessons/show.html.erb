@@ -1,5 +1,7 @@
 <p id="notice"><%= notice %></p>
-
+<div class="pull-right">
+<%= link_to 'Back', lessons_path %>
+</div>
 <p>
   <strong>Title:</strong>
   <%= @lesson.title %>
@@ -22,7 +24,7 @@
 
 <br>
 
-<%= link_to 'Back', lessons_path %>
+
 
 <iframe src="<%= @lesson.lesson_file %>"width="980" height="658"></iframe>
 <br>

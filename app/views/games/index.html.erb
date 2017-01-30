@@ -1,0 +1,29 @@
+
+
+<h1>Lessons</h1>
+
+
+
+
+<h3> Fractions </h3>
+<% @games.each do |game| %>
+  <p>
+    <td><%=  link_to game.title, game if game.subject == "Fractions" %></td>
+  </p>
+<% end %>
+<h3> Integers </h3>
+<% @games.each do |game| %>
+  <p>
+    <td><%=  link_to game.title, game if game.subject == "Integers" %></td>
+  </p>
+<% end %>
+<h3> Place Value </h3>
+<% @games.each do |game| %>
+  <p>
+    <td><%=  link_to game.title, game if game.subject == "Place Value" %></td>
+  </p>
+<% end %>
+
+</table>
+
+<br>

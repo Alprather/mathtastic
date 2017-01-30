@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+<div class="pull-right">
+<%= link_to 'Back', classroom_games_path %>
+</div>
+<p>
+  <strong>Title:</strong>
+  <%= @classroom_game.title %>
+</p>
+
+<p>
+  <strong>Subject:</strong>
+  <%= @classroom_game.subject %>
+</p>
+
+<p>
+  <strong>Grade:</strong>
+  <%= @classroom_game.grade %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @classroom_game.description %>
+</p>
+
+<br>
+
+
+
+<iframe src="<%= @classroom_game.lesson_file %>"width="980" height="658"></iframe>
+<br>
+<% if user_signed_in? %>
+<td><%= link_to 'Edit', edit_classroom_game_path(@classroom_game) %></td>
+<td><%= link_to 'Delete', @classroom_game, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+<% end %>

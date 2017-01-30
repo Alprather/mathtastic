@@ -5,6 +5,8 @@ Rails.application.routes.draw do
 
 resources :lessons
 resources :classrooms
+resources :games
+
   get "welcome/index"
 
   get "welcome/about"

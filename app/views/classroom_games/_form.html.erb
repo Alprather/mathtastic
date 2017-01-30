@@ -1,0 +1,39 @@
+<%= form_for(@classroom_game) do |f| %>
+  <% if @classroom_game.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@classroom_game.errors.count, "error") %> prohibited this classroom_game from being saved:</h2>
+
+      <ul>
+      <% @classroom_game.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :subject %><br>
+    <%= f.text_field :subject %>
+  </div>
+  <div class="field">
+    <%= f.label :grade %><br>
+    <%= f.number_field :grade %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_field :description, :size => 100, :rows => "10" %>
+  </div>
+  <div class="field">
+    <%= f.label :lesson_file %><br>
+    <%= f.text_field :lesson_file, :size => 100, :rows => "10" %>
+  </div>
+
+  <br>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
