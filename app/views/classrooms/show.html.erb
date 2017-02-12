@@ -18,7 +18,7 @@
 
 <iframe src="<%= @classroom.lesson_file %>"width="1000" height="700"></iframe>
 <br>
-<% if user_signed_in? %>
+ <% if current_user && current_user.admin? %>
 <td><%= link_to 'Edit', edit_classroom_path(@classroom) %></td>
 <td><%= link_to 'Delete', @classroom, method: :delete, data: { confirm: 'Are you sure?' } %></td>
 <% end %>

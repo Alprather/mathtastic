@@ -15,4 +15,8 @@
 /log/*
 !/log/.keep
 /tmp
+<<<<<<< HEAD
+=======
+
+>>>>>>> Roles
 .DS_Store
