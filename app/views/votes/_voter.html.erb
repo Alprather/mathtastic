@@ -1,0 +1,7 @@
+<% if user_signed_in? %>
+<div class="vote-arrows pull-left">
+   <div><%= link_to " ", lesson_up_vote_path(lesson), class: 'glyphicon glyphicon-chevron-up', method: :lesson %></div>
+   <div><strong><%= lesson.points %></strong></div>
+   <div><%= link_to " ", lesson_down_vote_path(lesson), class: 'glyphicon glyphicon-chevron-down', method: :lesson %></div>
+ </div>
+ <% end %>

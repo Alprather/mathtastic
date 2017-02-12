@@ -1,7 +1,7 @@
 
 
 <h1>Classroom Games</h1>
-<h4> Classroom games are a fun way to practice concepts.  Break the class into teams, or have students play as part of a center. </h4> 
+<h4> Classroom games are a fun way to practice concepts.  Break the class into teams, or have students play as part of a center. </h4>
 
 
 
@@ -12,12 +12,7 @@
     <td><%=  link_to game.title, game if game.subject == "Fractions" %></td>
   </p>
 <% end %>
-<h3> Integers </h3>
-<% @games.each do |game| %>
-  <p>
-    <td><%=  link_to game.title, game if game.subject == "Integers" %></td>
-  </p>
-<% end %>
+
 <h3> Place Value </h3>
 <% @games.each do |game| %>
   <p>

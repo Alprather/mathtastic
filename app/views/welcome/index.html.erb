@@ -1,9 +1,25 @@
-<h1>Welcome to Mathtastic</h1>
-<p>This website is under construction.  Check back soon for new lessons, games, activities, and classroom resources.</p>
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script>
-  (adsbygoogle = window.adsbygoogle || []).push({
-    google_ad_client: "ca-pub-1596292395207542",
-    enable_page_level_ads: true
-  });
-</script>
+
+<br>
+<div class="jumbotron">
+  <h1>Mathtastic Labs</h1>
+  <p>Interactive Math Lessons and Games</p>
+  <p>
+    <%= link_to "Sign Up", new_user_registration_path, class: 'btn btn-primary' %> today!
+  or  <%= link_to "Sign In", new_user_session_path %> 
+  </p>
+</div>
+
+<div class="row">
+  <div class="col-md-4">
+    <h2>Interactive Lessons</h2>
+    <p>Engaging lessons for interactive white boards, iPads, or Android devices </p>
+  </div>
+  <div class="col-md-4">
+    <h2>Classroom Games</h2>
+    <p>Make learning fun with learning games and easily integrate iPads into center activities</p>
+  </div>
+  <div class="col-md-4">
+    <h2>Classroom Tools</h2>
+    <p>Tools that make teaching easier</p>
+  </div>
+</div>
