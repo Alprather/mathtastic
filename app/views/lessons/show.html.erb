@@ -2,11 +2,11 @@
 <div class="pull-right">
 <%= link_to 'Back', lessons_path %>
 </div>
-<p>
+<h2>
   <strong>Title:</strong>
   <%= @lesson.title %>
   <%= render partial: 'votes/voter', locals: { lesson: @lesson } %>
-</p>
+</h2>
 
 <div class="col-md-4">
    <h3>
