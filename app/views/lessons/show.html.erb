@@ -4,21 +4,11 @@
 </div>
 <h2>
   <%= @lesson.title %>
-  <br>
   <h4><%= render partial: 'votes/voter', locals: { lesson: @lesson } %></h4>
-</h2>
 
-<div class="col-md-4">
-   <h3>
-     <%= pluralize(@lesson.points, 'point') %>
-     <div>
-       <small>
-         <%= pluralize(@lesson.up_votes, 'up vote') %>,
-         <%= pluralize(@lesson.down_votes, 'down vote') %>
-       </small>
-     </div>
-   </h3>
- </div>
+</h2>
+<br>
+<br>
 
 
 <p>
