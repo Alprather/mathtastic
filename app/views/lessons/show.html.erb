@@ -3,7 +3,6 @@
 <%= link_to 'Back', lessons_path %>
 </div>
 <h2>
-  <strong>Title:</strong>
   <%= @lesson.title %>
   <%= render partial: 'votes/voter', locals: { lesson: @lesson } %>
 </h2>
