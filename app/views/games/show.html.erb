@@ -28,7 +28,7 @@
 
 <iframe src="<%= @game.lesson_file %>"width="1000" height="700"></iframe>
 <br>
-<% if user_signed_in? %>
+ <% if current_user && current_user.admin? %>
 <td><%= link_to 'Edit', edit_game_path(@game) %></td>
 <td><%= link_to 'Delete', @game, method: :delete, data: { confirm: 'Are you sure?' } %></td>
 <% end %>
